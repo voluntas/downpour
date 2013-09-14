@@ -67,3 +67,15 @@ haystack + django + elasticsearch メモ
      u'fields': {'category1': [(u'0', 3), (u'1', 1)]},
      u'queries': {}}
 
+
+とりあえずデータを適当に突っ込んでみた::
+
+    >>> SearchQuerySet().facet('price_range').models(Product).facet_counts()
+    {u'dates': {},
+     u'fields': {'price_range': [(4, 4371),
+       (3, 2219),
+       (2, 2157),
+       (1, 1094),
+       (0, 1068),
+       (5, 95)]},
+     u'queries': {}}
