@@ -12,8 +12,6 @@ haystack + django + elasticsearch メモ
     $ python manage.py syncdb --noinput
 
     $ python manage.py shell
-
-    $ python manage.py shell
     >>> from shop.models import Product
     >>> Product(name='a', price=1000).save()
     >>> Product(name='b', price=10000).save()
