@@ -7,7 +7,7 @@ haystack + django + elasticsearch メモ
     $ curl https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.3.tar.gz
     $ tar xvfz elasticsearch-0.90.3.tar.gz
     $ cd elasticsearch-0.90.3
-    $ /bin/elasticsearch -f
+    $ ./bin/elasticsearch -f
 
     $ python manage.py syncdb --noinput
 
