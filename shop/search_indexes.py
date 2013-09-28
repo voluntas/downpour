@@ -1,9 +1,10 @@
 import datetime
 
 from haystack import indexes
+from celery_haystack.indexes import CelerySearchIndex
 from .models import Product
 
-class ProductIndex(indexes.SearchIndex, indexes.Indexable):
+class ProductIndex(CelerySearchIndex, indexes.Indexable):
     text = indexes.CharField(document=True, use_template=True)
     price = indexes.IntegerField(model_attr='price')
 
