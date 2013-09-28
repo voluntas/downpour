@@ -160,7 +160,7 @@ LOGGING = {
 
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'downpour.backends.elasticsearch_backend.KuromojiElasticsearchSearchEngine',
+        'ENGINE': 'downpour.haystack.backends.elasticsearch_backend.KuromojiElasticsearchSearchEngine',
         # 'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
         'URL': 'http://127.0.0.1:9200/',
         'INDEX_NAME': 'haystack',
